@@ -1,1 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+$body-bg: 					#ecf0f1;
+$font-family-sans-serif:	'Montserrat', Helvetica, Arial, sans-serif;
+$navbar-height:				38px;
+$navbar-default-bg: 		#1abc9c;
+$navbar-default-link-color: white;
+$brand-primary: 			#1abc9c;
+$jumbotron-bg:			 	#fbfcfc;
+
+@import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+// to be use for eg to make jumbotron centered
+.center {
+     text-align: center;
+}
+
+// to make navbar brand font to be bold
+.navbar-brand {
+     font-weight: bold;
+}
