@@ -16,18 +16,18 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><%= link_to "About Us", about_path %><span class="sr-only">(current)</span></a></li>
-        <li><%= link_to "Register Here", registration_path %></a></li>
+        <li><%= link_to "Find Out More Here", more_path %></a></li>
         
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EMPTY <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Advertise with Us<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Join Mailing List</a></li>
-            <li><a href="#">Historical Events</a></li>
-            <li><a href="#">Privacy Agreement</a></li>
+            <li><a href="#">Event Sponsor</a></li>
+            <li><a href="#">Banner Sponsor</a></li>
+            <li><a href="#">Advertisement</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">Call Us</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">Email Us</a></li>
           </ul>
         </li>
       </ul>
@@ -42,17 +42,17 @@
         <% if user_signed_in? %>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
         <% else %>
+          <li><%= link_to "Sign up", new_user_registration_path %></li>
           <li><%= link_to "Sign in", new_user_session_path %></li>
         <% end %>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EMPTY <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Terms<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">Help</a></li>
           </ul>
         </li>
       </ul>

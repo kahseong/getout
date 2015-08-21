@@ -1,13 +1,14 @@
-	<% if user_signed_in? %>
-          # do something
-     <% else %>
-
 <div class="jumbotron" style="background-image: url(http://www.splitshire.com/wp-content/uploads/2015/06/SplitShire-4062-1800x1200.jpg); background-size: 100%;	 background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+
 		<p><h1><font color = "#16a085">Get Out</font><h1></p>
 		<p><h1><font color = "#16a085">Get Fit!<h1></p>
-	<p><h4><font color = white>On Wheels or On your Feet...<h4></p>
-	<p><h4>find out race events here<h4></p> 
-	<p><h4>Click here to <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %><h4></p> 
+		<p><h4><font color = white>On Wheels or On your Feet...<h4></p>
+		<p><h4>find out race events here<h4></p> 
+
+	<% if user_signed_in? %>
+          <h5>Now it is time to Get Out there and have some fun!<h5>
+	<% else %>
+		  <p><h4>Click here to <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %><h4></p> 
 	<% end %>
 </div>
 

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'pages#home'
-  get 'registration' => 'pages#registration'
+  get 'more' => 'pages#more'
   get 'about' => 'pages#about'
   
 
